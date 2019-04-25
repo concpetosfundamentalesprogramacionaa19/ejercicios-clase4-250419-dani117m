@@ -17,17 +17,19 @@ public class SeleccionSimple {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //documentacion
-        //documentacion
+        // escaneo de datos 
         Scanner entrada = new Scanner(System.in);
-        //
         
+        // calificacion es entero 
         int calificacion;
-        //
+        
+        //ingreso de la variable por teclado 
         System.out.println("ingrese la Su nota ");
-        calificacion= entrada.nextInt();
-        String miMensaje=operacion.mensaje;
-        //
+        calificacion = entrada.nextInt();
+        String miMensaje =operacion.mensaje;
+        
+        
+        // se muestra por medio de una importacion 
         if (calificacion >=85){
             System.out.printf("%s %d\n", miMensaje,calificacion);
     }
