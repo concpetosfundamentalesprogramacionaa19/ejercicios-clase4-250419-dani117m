@@ -35,21 +35,22 @@ public class Principal {
         
         // se muestra por medio de una importacion 
     if ( mensajes <=40){
-            total = (mensajes*3);
-            p_iva = (total*iva)+total;         
-        System.out.printf("El valor a pagar es (incluye iva) 2.f", p_iva);     
+            p_iva = (3*iva)+3;         
+        System.out.printf("La tarifa a pagar con iva es ", p_iva);     
     }else{   
       if (mensajes < 41 && mensajes >=200){
-            total = (mensajes*3.05);
+            total = (mensajes*0.05);
             p_iva = (total*iva)+total; 
-          System.out.printf("El valor a pagar es (incluye iva) 2.f ", p_iva);
+          System.out.printf("La tarifa a pagar es (incluye iva)  ", p_iva);
       }else{
           if(mensajes >= 201){
-              total = (mensajes*3.05);
+              total = (mensajes*0.10);
                 p_iva = (total*iva)+total;
-              System.out.printf("El valor a pagar es (incluye iva) 2.f", p_iva);   
-      }
-      }
-    }        
+              System.out.printf("El valor a pagar es (incluye iva) ", p_iva); 
+          }
+      }          
+       
+    }
     }
 }
+  
