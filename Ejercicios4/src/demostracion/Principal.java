@@ -28,7 +28,7 @@ public class Principal {
         double total;
         double p_iva;
         //ingreso de la variable por teclado 
-        System.out.println("Ingrese el numero de mensajes utilizado ");
+        System.out.println("Ingrese el numero de mensajes utilizados ");
        
         mensajes = entrada.nextInt();
         
@@ -36,17 +36,17 @@ public class Principal {
         // se muestra por medio de una importacion 
     if ( mensajes <=40){
             p_iva = (3*iva)+3;         
-        System.out.printf("La tarifa a pagar con iva es ", p_iva);     
+        System.out.printf("La tarifa a pagar con iva es %s \n", p_iva);     
     }else{   
-      if (mensajes < 41 && mensajes >=200){
+      if (mensajes >= 41 && mensajes <=200){
             total = (mensajes*0.05);
             p_iva = (total*iva)+total; 
-          System.out.printf("La tarifa a pagar es (incluye iva)  ", p_iva);
+        System.out.printf("La tarifa a pagar con iva es %s \n", p_iva);
       }else{
           if(mensajes >= 201){
               total = (mensajes*0.10);
                 p_iva = (total*iva)+total;
-              System.out.printf("El valor a pagar es (incluye iva) ", p_iva); 
+            System.out.printf("El valor a pagar con iva es %s \n", p_iva); 
           }
       }          
        
